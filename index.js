@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 
 //const iss = require("./public/js/iss")
-const info = require("./public/js/planetsAPI.js");
+
 
 const app = express();
 const port = process.env.PORT || "9999";
@@ -15,8 +15,8 @@ app.use(express.static(path.join(__dirname, "public")));
 
 //page routes
 app.get("/",async(request,response)=>{
-    let planetInfo = await info.getPlanetsInfo();
-    response.render("index",{title:"Home",planets:planetInfo});
+    
+    response.render("index",{title:"Home"});
 });
 app.get("/iss",async(request,response)=>{
     //let isslocation = await iss.getIss();

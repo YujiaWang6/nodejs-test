@@ -11,13 +11,7 @@ block main-content
             h1#apod__textBox__h1 All About the Universe: Embark on a Celestial Adventure
             p Welcome to 'All About the Universe' - your gateway to an extraordinary celestial adventure. Discover the wonders of space, from distant galaxies to our own solar system, and immerse yourself in captivating imagery, fascinating facts, and up-to-date information about planets, stars, and more.
             a(href="/astronomyPic" id="apod__textBox__Button") Astronomy Picture of the Day
-    h2 Planets
-    div#planets 
-        each planet in planets 
-            div.planets__eachPlanet
-                a(href="/planets")
-                    img(src=planet.imageLink alt=planet.englishName width="200")
-                    p #{planet.englishName}
+
     h2 International Space Station(ISS)
     div#iss 
         img(src="http://images-assets.nasa.gov/image/9802669/9802669~orig.jpg" alt="image of international space station" width="400")
