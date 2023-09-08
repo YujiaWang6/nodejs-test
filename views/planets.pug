@@ -1,0 +1,11 @@
+extends layout
+
+block append scripts 
+    link(rel="stylesheet", type="text/css", href="/css/planets.css")
+    script(type="module" src="js/planetsAPI.js")
+    script(src="js/planetsAnimation.js")
+
+block main-content 
+    h1 Discover the Planets
+    p Welcome to "Discover the Planets," your gateway to an awe-inspiring cosmic adventure! Embark on an enthralling journey through our solar system as we unveil the beauty and wonder of each planet. From scorching Mercury to icy Neptune, get ready to explore the diverse and mysterious realms that grace our celestial neighborhood. Join us as we marvel at the captivating visuals and discover the key details that make each planet unique. It's time to be spellbound by the wonders of the cosmos!
+    div#planetContainer

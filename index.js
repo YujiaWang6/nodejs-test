@@ -3,7 +3,6 @@ const path = require("path");
 
 //const iss = require("./public/js/iss")
 
-
 const app = express();
 const port = process.env.PORT || "9999";
 
@@ -27,6 +26,10 @@ app.get("/iss",async(request,response)=>{
 app.get("/astronomyPic",async(request,response)=>{
     response.render("astronomyPic",{title:"Astronomy Picture"});
 });
+
+app.get("/planets",async(request,response)=>{
+    response.render("planets",{title:"Planets"});
+})
 
 app.listen(port, ()=>{
     console.log(`Listening on http://localhost:${port}`);
