@@ -23,11 +23,7 @@ app.get("/iss",async(request,response)=>{
     //console.log(isslocation);
     response.render("iss",{title: "ISS"});
 });
-app.get("/planets",async(request,response)=>{
-    let infoP = await info.getPlanetsInfo();
-    //console.log(infoP);
-    response.render("planets",{title: "Planets",planets: infoP});
-});
+
 app.get("/astronomyPic",async(request,response)=>{
     response.render("astronomyPic",{title:"Astronomy Picture"});
 });
