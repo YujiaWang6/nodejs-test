@@ -1,0 +1,26 @@
+extends layout
+
+block append scripts
+    link(rel="stylesheet", type="text/css", href="/css/index.css")
+    script(src="js/index.js")
+    
+
+block main-content 
+    div#apod
+        div#apod__textBox 
+            h1#apod__textBox__h1 All About the Universe: Embark on a Celestial Adventure
+            p Welcome to 'All About the Universe' - your gateway to an extraordinary celestial adventure. Discover the wonders of space, from distant galaxies to our own solar system, and immerse yourself in captivating imagery, fascinating facts, and up-to-date information about planets, stars, and more.
+            a(href="/astronomyPic" id="apod__textBox__Button") Astronomy Picture of the Day
+    h2 Planets
+    div#planets 
+        each planet in planets 
+            div.planets__eachPlanet
+                a(href="/planets")
+                    img(src=planet.imageLink alt=planet.englishName width="200")
+                    p #{planet.englishName}
+    h2 International Space Station(ISS)
+    div#iss 
+        img(src="http://images-assets.nasa.gov/image/9802669/9802669~orig.jpg" alt="image of international space station" width="400")
+        div#iss__info
+            p Are you curious about the International Space Station's (ISS) location as it orbits high above our planet? The ISS, a marvel of human engineering, orbits the Earth at an incredible speed, making multiple trips around the globe every day. But how can we keep track of its exact position in the vastness of space?
+            a(href="/iss" id="iss__info__Button") Finding out ISS

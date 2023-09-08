@@ -1,0 +1,12 @@
+.introiss{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+.issOutput{
+    display: flex;
+    flex-direction: row;
+
+    gap: 1rem;
+}

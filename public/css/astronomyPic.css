@@ -1,0 +1,21 @@
+form{
+    margin: 1rem;
+}
+#apod{
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+}
+#userDate{
+    background-color: white;
+    color:black;
+    font-weight: bold;
+    padding:0.3rem;
+
+}
+#submitBtn{
+    padding:0.3rem;
+    font-weight: bold;
+    background-color: white;
+    color:black;
+}

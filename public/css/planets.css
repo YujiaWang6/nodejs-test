@@ -1,0 +1,17 @@
+#planetContainer{
+    display: flex;
+    overflow: hidden;
+}
+
+@keyframes animatedPlanets{
+    from {
+        transform: translateX(-100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+}
+
+.planetContainer__eachplanet{
+    animation: animatedPlanets 15s linear infinite alternate;
+}

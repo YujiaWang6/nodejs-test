@@ -1,0 +1,16 @@
+extends layout
+
+block append scripts
+    link(rel="stylesheet", type="text/css", href="/css/iss.css")
+    script(src="js/iss.js")
+
+block main-content
+    h1 International Space Station(ISS)
+    h2 What is ISS?
+    div.introiss
+        img(src="http://images-assets.nasa.gov/image/9802669/9802669~orig.jpg" alt="image of international space station" width="400")
+        p The International Space Station (ISS) is a remarkable feat of international collaboration and engineering, serving as a microgravity laboratory and a symbol of humanity's exploration beyond Earth. Launched and constructed through joint efforts by multiple space agencies, including NASA, Roscosmos, ESA, JAXA, and CSA, the ISS has been continuously inhabited since November 2000, making it one of the most extended periods of human presence in space. Orbiting approximately 400 kilometers above Earth, the ISS serves as a hub for scientific research, technological advancements, and international cooperation, fostering a deeper understanding of space and contributing to our knowledge of living and working in the cosmos.
+    h2 Where the ISS at?
+    div.issOutput
+        div#issMap 
+        div#issInfo

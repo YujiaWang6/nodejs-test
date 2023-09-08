@@ -1,0 +1,39 @@
+doctype html 
+html 
+    head 
+        meta(charset="utf-8")
+        title #{title} | All About The Universe 
+        link(rel="stylesheet", type="text/css", href="/css/general.css")
+        block scripts 
+    body 
+        header#header 
+            div.siteNameNav
+                h2.siteName
+                    a(href="/" id="siteName__link") All About The Universe
+                nav.nav
+                    ul.nav__Container
+                        li 
+                            a(href="/") Home 
+                        li 
+                            a(href="/astronomyPic") Astronomy Picture
+                        li 
+                            a(href="/iss") ISS 
+                        li 
+                            a(href="/planets") Planets 
+        main#main 
+            block main-content 
+        footer#footer 
+            div.siteNameNav
+                h2.siteName
+                    a(href="/" id="siteName__link") All About The Universe
+                nav.nav
+                    ul.nav__Container
+                        li 
+                            a(href="/") Home 
+                        li 
+                            a(href="/astronomyPic") Astronomy Picture
+                        li 
+                            a(href="/iss") ISS 
+                        li 
+                            a(href="/planets") Planets 
+            p ©2023 ALL ABOUT THE UNIVERSE, ALL rights reserved.

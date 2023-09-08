@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&display=swap');
+
+/*--General--*/
+html{
+    background-color: black;
+    color: white;
+    margin:0;
+    font-family: 'Exo 2', sans-serif;
+
+}
+body{
+    margin:0;
+}
+.siteNameNav{
+    display: flex;
+    flex-direction: row;
+
+    margin: 0 0 1rem 0;
+}
+
+.nav__Container a{
+    text-decoration: none;
+}
+.nav__Container{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding:4rem 4rem 0 4rem;
+    margin:0;
+
+}
+.nav__Container li{
+    flex:1;
+    text-align: center;
+}
+.nav__Container li a{
+    color: white;
+}
+.siteName{
+    margin:0;
+    background-position: bottom;
+    padding:4rem 4rem 0 4rem;
+    background-size: 100%;
+    flex-grow: 1;
+}
+.nav{
+    flex-grow: 6;
+
+}
+#siteName__link{
+    text-decoration: none;
+    color:white;
+}
+
