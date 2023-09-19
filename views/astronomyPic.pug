@@ -6,10 +6,10 @@ block append scripts
 
 block main-content 
     h1 Astronomy Picture of the Day
-    p Astronomy Picture of the Day (APOD) is a popular NASA initiative that presents captivating images and explanations of celestial wonders, providing a daily dose of cosmic beauty and knowledge to astronomy enthusiasts and the public alike. Each day, APOD showcases stunning photographs and illustrations of planets, stars, galaxies, and other cosmic phenomena, offering a glimpse into the awe-inspiring marvels of the universe.
-    h2(style="font-size:16px !important;") Choose your preferred date here
+    p(id="apod_p") Astronomy Picture of the Day (APOD) is a popular NASA initiative that presents captivating images and explanations of celestial wonders, providing a daily dose of cosmic beauty and knowledge to astronomy enthusiasts and the public alike. Each day, APOD showcases stunning photographs and illustrations of planets, stars, galaxies, and other cosmic phenomena, offering a glimpse into the awe-inspiring marvels of the universe.
+    h2 Choose your preferred date here
     form(action="#" method="GET" id="apod__form")
-        input(type="date" id="userDate" min="2015-01-01" max="")
+        input(type="date" id="userDate" min="2015-01-01" placeholder="yyyy-mm-dd")
         input(type="button" id="submitBtn" value="Submit")
     div#apod 
         div#apod__apiOutput 

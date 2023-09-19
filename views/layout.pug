@@ -4,12 +4,16 @@ html
         meta(charset="utf-8")
         title #{title} | All About The Universe 
         link(rel="stylesheet", type="text/css", href="/css/general.css")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+        script(src="js/general.js")
         block scripts 
     body 
         header#header 
             div.siteNameNav
                 h2.siteName
                     a(href="/" id="siteName__link") All About The Universe
+                a(href="javascript:void(0);" class="icon" id="menu__toggle" onclick="toggleMenu();")
+                    i(class="fa fa-bars")
                 nav.nav
                     ul.nav__Container
                         li 

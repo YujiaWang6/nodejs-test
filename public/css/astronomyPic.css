@@ -8,6 +8,10 @@ form{
     flex-wrap: wrap;
     
 }
+#apod_p{
+    font-size: 16px !important;
+    
+}
 #apod__apiOutput {
     max-width: 60%;
 }
@@ -46,8 +50,6 @@ form{
     font-size: 24px;
 }
 
-@media screen and (max-width:980px){
-    #main p{
-        font-size: 16px !important;
-    }
+@media screen and (max-width:768px){
+    
 }
