@@ -5,6 +5,14 @@ form{
     display: flex;
     flex-direction: row;
     gap:1rem;
+    flex-wrap: wrap;
+    
+}
+#apod__apiOutput {
+    max-width: 60%;
+}
+#apod__apiIntro {
+    max-width: 35%;
 }
 #userDate{
     background-color: white;
@@ -18,4 +26,28 @@ form{
     font-weight: bold;
     background-color: white;
     color:black;
+}
+
+#apod__apiIntro h2{
+    margin-top: 0;
+}
+
+#userDate{
+    width: 177px;
+    height: 48px;
+    font-size: 24px;
+    vertical-align: middle;
+    margin-right: 16px;
+}
+#submitBtn{
+    width: 96px;
+    height:48px;
+    vertical-align: middle;
+    font-size: 24px;
+}
+
+@media screen and (max-width:980px){
+    #main p{
+        font-size: 16px !important;
+    }
 }

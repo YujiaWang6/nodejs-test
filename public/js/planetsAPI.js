@@ -2,6 +2,8 @@ window.onload=getPlanetsInfo;
 
 async function getPlanetsInfo(){
     var planetContainer= document.getElementById("planetContainer");
+
+    
     const urlBase = "https://api.le-systeme-solaire.net/rest/bodies/";
 
     var planetId = ["uranus","neptune","jupiter","mars","mercure","saturne","terre","venus"];
@@ -33,6 +35,8 @@ async function getPlanetsInfo(){
                         console.log(data.id);
                         planetContainer.innerHTML+= "<div class='planetContainer__eachplanet'><img src="+data.imageLink+" alt="+data.englishName+" width='300'><div class='eachplanet__intro'><p>Name: "+data.englishName+"</p><p>Mass: "+(data.mass.massValue).toFixed(2)+" x 10<sup>"+data.mass.massExponent+"</sup> kg</p><p>Volume: "+(data.vol.volValue).toFixed(2)+" x 10<sup>"+data.vol.volExponent+"</sup> km<sup>3</sup></p><p>Distance To The Sun: "+((data.semimajorAxis)/1000000).toFixed(2)+" x 10<sup>6</sup> km</p><p>Mean Radius: "+data.meanRadius+" km</p><p>Average Temperature: "+((data.avgTemp)-273.15).toFixed(2)+" &deg;C</p><p>Escape Velocity: "+data.escape+" m/s</p></div></div>";
                         //planetResult.push(data);
+
+                        
                 }
             }
         }

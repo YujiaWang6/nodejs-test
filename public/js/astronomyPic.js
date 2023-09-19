@@ -30,7 +30,7 @@ function pageReady(){
                 var data = xhr.response;
                 console.log(data);
                 if(data.media_type === "image"){
-                    apodOutput.innerHTML = "<img src='"+data.url+"' width='960'>";
+                    apodOutput.innerHTML = "<img src='"+data.url+"' width='100%' max-width='700px'>";
                 }else if(data.media_type === "video"){
                     apodOutput.innerHTML = "<iframe src='"+data.url+"' width='960' height='540' style='border:1px solid black;'></iframe>";
                 }
