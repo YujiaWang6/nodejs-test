@@ -50,6 +50,12 @@ form{
     font-size: 24px;
 }
 
-@media screen and (max-width:768px){
-    
+@media screen and (max-width:600px){
+    #apod__apiOutput {
+        max-width: 100%;
+    }
+    #apod__apiIntro {
+        max-width: 100%;
+    }
+
 }
