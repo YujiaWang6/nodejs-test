@@ -1,51 +1,56 @@
-form{
+form {
     margin: 1rem;
 }
-#apod{
+
+#apod {
     display: flex;
     flex-direction: row;
-    gap:1rem;
+    gap: 1rem;
     flex-wrap: wrap;
-    
+    justify-content: center;
 }
-#apod_p{
-    font-size: 16px !important;
-    
+
+#apod_p {
+    font-size: 16px !important; 
 }
+
 #apod__apiOutput {
     max-width: 60%;
 }
+
 #apod__apiIntro {
     max-width: 35%;
 }
-#userDate{
-    background-color: white;
-    color:black;
-    font-weight: bold;
-    padding:0.3rem;
 
-}
-#submitBtn{
-    padding:0.3rem;
-    font-weight: bold;
+#userDate {
     background-color: white;
-    color:black;
+    color: black;
+    font-weight: bold;
+    padding: 0.3rem;
 }
 
-#apod__apiIntro h2{
+#submitBtn {
+    padding: 0.3rem;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+}
+
+#apod__apiIntro h2 {
     margin-top: 0;
 }
 
-#userDate{
+#userDate {
     width: 177px;
     height: 48px;
     font-size: 24px;
     vertical-align: middle;
     margin-right: 16px;
 }
-#submitBtn{
+
+#submitBtn {
     width: 96px;
-    height:48px;
+    height: 48px;
     vertical-align: middle;
     font-size: 24px;
 }
@@ -53,9 +58,15 @@ form{
 @media screen and (max-width:600px){
     #apod__apiOutput {
         max-width: 100%;
+
     }
     #apod__apiIntro {
         max-width: 100%;
+ 
     }
 
+    #apod {
+        flex-direction: column;
+        align-items: center;
+    }
 }
